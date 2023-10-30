@@ -66,4 +66,15 @@ unsigned int LoadShaders(const char *vertex_file_path,
   }
 
   std::cout << "linking program..." << std::endl;
+  unsigned int ShaderProgram;
+  ShaderProgram = glCreateProgram();
+
+  glAttachShader(ShaderProgram, VertexShaderId);
+  glAttachShader(ShaderProgram, FragmentShaderId);
+  glLinkProgram(ShaderProgram);
+
+  glDeleteShader(VertexShaderId);
+  glDeleteShader(FragmentShaderId);
+
+  return ShaderProgram;
 }
