@@ -261,29 +261,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-util/Shaders.o: util/Shaders.cpp.o
-.PHONY : util/Shaders.o
+util/stb_image.o: util/stb_image.cpp.o
+.PHONY : util/stb_image.o
 
 # target to build an object file
-util/Shaders.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/Shaders.cpp.o
-.PHONY : util/Shaders.cpp.o
+util/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.o
+.PHONY : util/stb_image.cpp.o
 
-util/Shaders.i: util/Shaders.cpp.i
-.PHONY : util/Shaders.i
+util/stb_image.i: util/stb_image.cpp.i
+.PHONY : util/stb_image.i
 
 # target to preprocess a source file
-util/Shaders.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/Shaders.cpp.i
-.PHONY : util/Shaders.cpp.i
+util/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.i
+.PHONY : util/stb_image.cpp.i
 
-util/Shaders.s: util/Shaders.cpp.s
-.PHONY : util/Shaders.s
+util/stb_image.s: util/stb_image.cpp.s
+.PHONY : util/stb_image.s
 
 # target to generate assembly for a file
-util/Shaders.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/Shaders.cpp.s
-.PHONY : util/Shaders.cpp.s
+util/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.s
+.PHONY : util/stb_image.cpp.s
 
 # Help Target
 help:
@@ -307,9 +307,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... util/Shaders.o"
-	@echo "... util/Shaders.i"
-	@echo "... util/Shaders.s"
+	@echo "... util/stb_image.o"
+	@echo "... util/stb_image.i"
+	@echo "... util/stb_image.s"
 .PHONY : help
 
 

@@ -97,32 +97,32 @@ CMakeFiles/game.dir/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/game.dir/glad.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/glad.c -o CMakeFiles/game.dir/glad.c.s
 
-CMakeFiles/game.dir/util/Shaders.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/util/Shaders.cpp.o: util/Shaders.cpp
-CMakeFiles/game.dir/util/Shaders.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/util/Shaders.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/util/Shaders.cpp.o -MF CMakeFiles/game.dir/util/Shaders.cpp.o.d -o CMakeFiles/game.dir/util/Shaders.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Shaders.cpp
+CMakeFiles/game.dir/util/stb_image.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/util/stb_image.cpp.o: util/stb_image.cpp
+CMakeFiles/game.dir/util/stb_image.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/util/stb_image.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/util/stb_image.cpp.o -MF CMakeFiles/game.dir/util/stb_image.cpp.o.d -o CMakeFiles/game.dir/util/stb_image.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/stb_image.cpp
 
-CMakeFiles/game.dir/util/Shaders.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/util/Shaders.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Shaders.cpp > CMakeFiles/game.dir/util/Shaders.cpp.i
+CMakeFiles/game.dir/util/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/util/stb_image.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/stb_image.cpp > CMakeFiles/game.dir/util/stb_image.cpp.i
 
-CMakeFiles/game.dir/util/Shaders.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/util/Shaders.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Shaders.cpp -o CMakeFiles/game.dir/util/Shaders.cpp.s
+CMakeFiles/game.dir/util/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/util/stb_image.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/stb_image.cpp -o CMakeFiles/game.dir/util/stb_image.cpp.s
 
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/main.cpp.o" \
 "CMakeFiles/game.dir/glad.c.o" \
-"CMakeFiles/game.dir/util/Shaders.cpp.o"
+"CMakeFiles/game.dir/util/stb_image.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
 game: CMakeFiles/game.dir/main.cpp.o
 game: CMakeFiles/game.dir/glad.c.o
-game: CMakeFiles/game.dir/util/Shaders.cpp.o
+game: CMakeFiles/game.dir/util/stb_image.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: lib/glfw/src/libglfw3.a
 game: CMakeFiles/game.dir/link.txt

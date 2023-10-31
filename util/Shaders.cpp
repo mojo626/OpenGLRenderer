@@ -8,8 +8,8 @@
 #include <string>
 #include <vector>
 
-unsigned int LoadShaders(const char *vertex_file_path,
-                         const char *fragment_file_path) {
+unsigned int Shader::LoadShaders(const char *vertex_file_path,
+                                 const char *fragment_file_path) {
   std::cout << "Loading Shaders...\n";
 
   unsigned int VertexShaderId = glCreateShader(GL_VERTEX_SHADER);

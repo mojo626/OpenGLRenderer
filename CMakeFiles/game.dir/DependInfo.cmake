@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/glad.c" "CMakeFiles/game.dir/glad.c.o" "gcc" "CMakeFiles/game.dir/glad.c.o.d"
   "/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/main.cpp" "CMakeFiles/game.dir/main.cpp.o" "gcc" "CMakeFiles/game.dir/main.cpp.o.d"
-  "/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Shaders.cpp" "CMakeFiles/game.dir/util/Shaders.cpp.o" "gcc" "CMakeFiles/game.dir/util/Shaders.cpp.o.d"
+  "/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/stb_image.cpp" "CMakeFiles/game.dir/util/stb_image.cpp.o" "gcc" "CMakeFiles/game.dir/util/stb_image.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

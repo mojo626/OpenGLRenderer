@@ -1,6 +1,6 @@
 CMakeFiles/game.dir/main.cpp.o: \
   /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/main.cpp \
-  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Shaders.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Camera.h \
   /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glfw/include/GLFW/glfw3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
@@ -36,68 +36,29 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_uintmax_t.h \
   /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/include/glad/glad.h \
   /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/include/KHR/khrplatform.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/glm.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/_fixes.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__verbose_abort \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__availability \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/version \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ios/fpos.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iosfwd \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__mbstate_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityInternal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_null.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_size_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mbstate_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ct_rune_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rune_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wchar_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_va_list.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctermid.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_off_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ssize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_clock_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_time_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_timespec.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/__wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wint_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_wctype_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/runetype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cctype \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdint \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/locale.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_locale.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/memory \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/copy.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/enable_if.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_same.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/promote.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/integral_constant.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/concepts \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/arithmetic.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_same.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/declval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstddef \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/enable_if.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_integral.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_cv.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_const.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/version \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h \
@@ -106,11 +67,6 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_const.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_volatile.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_reference.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstddef \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_integral.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_cv.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_const.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/conditional.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/decay.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/add_pointer.h \
@@ -125,7 +81,6 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_void.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/nat.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/declval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/forward.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/add_const.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/add_cv.h \
@@ -210,6 +165,355 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/rank.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/type_identity.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdint \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__undef_macros \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/wait.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_id_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/appleapiopts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/machine/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/arm/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ucontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_size_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/libkern/arm/OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/arch.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wchar_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_null.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/malloc/_malloc.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_dev_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mode_t.h \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/setup.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cassert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/assert.h \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../simd/platform.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/climits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cfloat \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/float.h \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/fwd.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/qualifier.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/vec2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_bool2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_vec2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec2.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/./compute_vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_bool2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_float2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_float2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_double2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_double2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_int2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_int2_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_int2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/scalar_int_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/setup.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_uint2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_uint2_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_uint2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/scalar_uint_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/vec3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_bool3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_vec3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec3.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/compute_vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_bool3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_float3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_float3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_double3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_double3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_int3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_int3_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_int3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_uint3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_uint3_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_uint3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/vec4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_bool4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_vec4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec4.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_bool4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_float4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_float4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_double4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_double4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_int4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_int4_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_int4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_uint4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_uint4_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_uint4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat2x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double2x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat2x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat2x2.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../matrix.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat2x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double2x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat2x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat2x3.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double2x3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float2x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float2x3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat2x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double2x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat2x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat2x4.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double2x4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float2x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float2x4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat3x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double3x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat3x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat3x2.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double3x2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float3x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float3x2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat3x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double3x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat3x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat3x3.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double3x3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float3x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float3x3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat3x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double3x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat3x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat3x4.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double3x4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float3x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float3x4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat4x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double4x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat4x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat4x2.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double4x2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float4x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float4x2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat4x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double4x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat4x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat4x3.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double4x3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float4x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float4x3_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/mat4x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double4x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_mat4x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_mat4x4.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double4x4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float4x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float4x4_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_matrix.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../geometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_geometric.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../exponential.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_vec1.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_exponential.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_vector_relational.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/_vectorize.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../common.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_common.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/compute_common.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_double2x2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float2x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_float2x2_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/trigonometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_trigonometric.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/exponential.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/common.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/packing.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_packing.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_half.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_half.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/geometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/matrix.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/integer.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/func_integer.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/matrix_transform.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat4x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../vec2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../vec3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../vec4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/matrix_projection.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../gtc/constants.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/scalar_constants.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/scalar_constants.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/constants.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../geometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../trigonometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../matrix.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_projection.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/matrix_clip_space.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/scalar_constants.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_clip_space.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/matrix_transform.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/matrix_transform.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/matrix_transform.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../geometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../trigonometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../matrix.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/type_ptr.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../gtc/quaternion.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../gtc/constants.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../gtc/matrix_transform.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/qualifier.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_relational.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../common.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_float.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_common.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/quaternion_geometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../exponential.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/quaternion_geometric.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/quaternion_common.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_float.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_quat.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../detail/type_mat3x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../detail/type_mat4x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../detail/type_vec3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../detail/type_vec4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../ext/vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../ext/quaternion_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/quaternion_relational.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../gtc/constants.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../gtc/matrix_transform.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/type_quat.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../trigonometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/detail/../ext/quaternion_geometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_float_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_double.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_double_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_geometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_trigonometric.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/scalar_constants.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/quaternion_trigonometric.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/quaternion_transform.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/quaternion_transform.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../detail/type_mat3x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../detail/type_mat4x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../detail/type_vec3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../detail/type_vec4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/quaternion.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../exponential.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/epsilon.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../detail/setup.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../detail/qualifier.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/epsilon.inl \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../vector_relational.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../common.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../gtc/vec1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_bool1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../detail/type_vec1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_bool1_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_float1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_float1_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_double1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_double1_precision.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_int1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_int1_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_int1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_uint1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../ext/vector_uint1_sized.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/./ext/../ext/vector_uint1.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat2x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat2x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat2x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat3x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat3x3.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat3x4.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat4x2.hpp \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/../mat4x3.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstring \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_errno_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ssize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/strings.h \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/gtc/type_ptr.inl \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ios/fpos.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iosfwd \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__mbstate_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_va_list.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctermid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_off_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_clock_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_time_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_timespec.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/__wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wint_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_wctype_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/runetype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cctype \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/memory \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/copy.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/concepts \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/arithmetic.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/assignable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/common_reference_with.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/convertible_to.h \
@@ -243,38 +547,6 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/advance.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/unreachable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdlib \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/wait.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_pid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_id_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/appleapiopts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/machine/_structs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/arm/_structs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigaltstack.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ucontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigset_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/resource.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_timeval.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/libkern/_OSByteOrder.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/libkern/arm/OSByteOrder.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/arch.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/alloca.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/malloc/_malloc.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_dev_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mode_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__undef_macros \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/pair.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/common_comparison_category.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/ordering.h \
@@ -300,12 +572,6 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/dangling.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/view_interface.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/empty.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstring \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rsize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_errno_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/move.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/iter_swap.h \
@@ -345,10 +611,6 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/weak_order.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/strong_order.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bit/bit_cast.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cmath \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/promote.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/compare_strong_order_fallback.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/compare_weak_order_fallback.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/is_eq.h \
@@ -369,14 +631,6 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/duration.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ratio \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/climits \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/steady_clock.h \
@@ -452,8 +706,6 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/sortable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cassert \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__mutex_base \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/system_error \
@@ -733,4 +985,25 @@ CMakeFiles/game.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Shaders.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/sstream \
+  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/stb_image.h
