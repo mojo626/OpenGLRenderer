@@ -237,6 +237,30 @@ glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/glad.c.s
 .PHONY : glad.c.s
 
+include/Perlin.o: include/Perlin.cpp.o
+.PHONY : include/Perlin.o
+
+# target to build an object file
+include/Perlin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/include/Perlin.cpp.o
+.PHONY : include/Perlin.cpp.o
+
+include/Perlin.i: include/Perlin.cpp.i
+.PHONY : include/Perlin.i
+
+# target to preprocess a source file
+include/Perlin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/include/Perlin.cpp.i
+.PHONY : include/Perlin.cpp.i
+
+include/Perlin.s: include/Perlin.cpp.s
+.PHONY : include/Perlin.s
+
+# target to generate assembly for a file
+include/Perlin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/include/Perlin.cpp.s
+.PHONY : include/Perlin.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -304,6 +328,9 @@ help:
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
+	@echo "... include/Perlin.o"
+	@echo "... include/Perlin.i"
+	@echo "... include/Perlin.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

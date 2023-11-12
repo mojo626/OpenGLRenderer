@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 
 project(OpenGLRenderer)
 
-add_executable(game main.cpp glad.c util/stb_image.cpp)
+add_executable(game main.cpp glad.c util/stb_image.cpp include/Perlin.cpp)
 
 add_subdirectory(lib/glfw)
 

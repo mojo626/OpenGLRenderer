@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/game.dir/glad.c.o"
   "CMakeFiles/game.dir/glad.c.o.d"
+  "CMakeFiles/game.dir/include/Perlin.cpp.o"
+  "CMakeFiles/game.dir/include/Perlin.cpp.o.d"
   "CMakeFiles/game.dir/main.cpp.o"
   "CMakeFiles/game.dir/main.cpp.o.d"
   "CMakeFiles/game.dir/util/stb_image.cpp.o"

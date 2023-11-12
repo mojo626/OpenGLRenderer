@@ -1,13 +1,17 @@
+#include <cstdlib>
 #define GLFW_INCLUDE_NONE
 #include "util/Camera.h"
 #include "util/Shaders.hpp"
 #include "util/stb_image.h"
 #include <GLFW/glfw3.h>
+#include <Perlin.h>
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
+#include <stdlib.h>
+#include <vector>
 
 bool wireframe = false;
 float deltaTime = 0.0f;
@@ -45,6 +49,29 @@ void mouse_callback(GLFWwindow *window, double xpos, double ypos) {
   cam.HandleMouseMove(xoffset, yoffset);
 }
 
+std::vector<uint8_t> GenerateVoxels(glm::vec3 size) {
+  std::vector<uint8_t> voxels(size.x * size.y * size.z * 4);
+  Perlin p;
+
+  for (int x = 0; x < size.x; x++) {
+    for (int z = 0; z < size.z; z++) {
+      float noise = p.noise(x / 10.0, z / 10.0, 0.0) + 0.5;
+
+      for (int y = 0; y < size.y; y++) {
+        int id = 4 * (z * size.x * size.y + y * size.x + x);
+
+        voxels[id] = rand() % 255;
+        voxels[id + 1] = rand() % 255; // Green channel
+        voxels[id + 2] = rand() % 255; // Blue channel
+        voxels[id + 3] = static_cast<uint8_t>(
+            y < noise * 10 ? 255 : 0); // Alpha channel (fully opaque)
+      }
+    }
+  }
+
+  return voxels;
+}
+
 int main() {
   glfwInit();
   glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -69,6 +96,9 @@ int main() {
   }
 
   glEnable(GL_DEPTH_TEST);
+
+  Shader shaderProgram("res/shaders/rayMarching.vert",
+                       "res/shaders/rayMarching.frag");
 
   /*float vertices[] = {
       // positions          // colors           // texture coords
@@ -108,6 +138,8 @@ int main() {
       0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
       -0.5f, 0.5f,  0.5f,  0.0f, 0.0f, -0.5f, 0.5f,  -0.5f, 0.0f, 1.0f};
 
+  std::vector<uint8_t> voxels = GenerateVoxels(glm::vec3(10, 10, 10));
+
   // create vertex buffer
   unsigned int VBO, VAO, EBO;
   glGenBuffers(1, &VBO);
@@ -127,9 +159,9 @@ int main() {
   glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices,
                GL_STATIC_DRAW);*/
 
-  Shader shaderProgram("res/shaders/basic.vert", "res/shaders/basic.frag");
-
-  int width, height, nrChannels;
+  // Old texture code
+  //
+  /*int width, height, nrChannels;
   unsigned char *data = stbi_load("res/tex/container.jpg", &width, &height,
                                   &nrChannels, STBI_rgb);
 
@@ -143,9 +175,27 @@ int main() {
                GL_UNSIGNED_BYTE, data);
   glGenerateMipmap(GL_TEXTURE_2D);
 
-  stbi_image_free(data);
+  stbi_image_free(data);*/
+
+  unsigned int texture3D;
+  glGenTextures(1, &texture3D);
+  glBindTexture(GL_TEXTURE_3D, texture3D);
+
+  glTexParameteri(GL_TEXTURE_3D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+  glTexParameteri(GL_TEXTURE_3D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+  glTexParameteri(GL_TEXTURE_3D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+  glTexParameteri(GL_TEXTURE_3D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+  glTexParameteri(GL_TEXTURE_3D, GL_TEXTURE_WRAP_R, GL_REPEAT);
+
+  glTexImage3D(GL_TEXTURE_3D, 0, GL_RGBA, 10, 10, 10, 0, GL_RGBA,
+               GL_UNSIGNED_BYTE, voxels.data());
+  glGenerateMipmap(GL_TEXTURE_3D);
 
   shaderProgram.use();
+
+  shaderProgram.setVec3("camPos", cam.pos);
+  shaderProgram.setVec3("camDir", cam.front);
   // 0: which parameter we are talking about
   // 3: size fo vertex attrib (vec3)
   // GL_FLOAT: type of data
@@ -160,9 +210,6 @@ int main() {
                         (void *)(3 * sizeof(float)));
   glEnableVertexAttribArray(1);*/
   // texture coord attribute
-  glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
-                        (void *)(3 * sizeof(float)));
-  glEnableVertexAttribArray(1);
 
   glViewport(0, 0, 800, 600);
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
@@ -181,18 +228,28 @@ int main() {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+    glEnable(GL_TEXTURE_3D);
+
     glPolygonMode(GL_FRONT_AND_BACK, wireframe ? GL_LINE : GL_FILL);
 
     // bind texture
-    glBindTexture(GL_TEXTURE_2D, texture);
+    // glBindTexture(GL_TEXTURE_2D, texture);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_3D, texture3D);
+
+    unsigned int texLoc = glGetUniformLocation(shaderProgram.ID, "voxelShape");
+    glUniform1i(texLoc, 0);
 
     shaderProgram.use();
+    shaderProgram.setVec3("camPos", cam.pos);
+    shaderProgram.setVec3("camDir", cam.front);
+    shaderProgram.setVec3("camUp", cam.up);
+    shaderProgram.setVec3("camRight", cam.right);
 
     // preform matrix math
     // model matrix
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f),
-                        glm::vec3(0.5f, 1.0f, 0.0f));
+    model = glm::rotate(model, glm::radians(0.0f), glm::vec3(0.5f, 1.0f, 0.0f));
     glm::mat4 view = glm::mat4(1.0f);
     // note that we're translating the scene in the reverse direction of where
     // we want to move
