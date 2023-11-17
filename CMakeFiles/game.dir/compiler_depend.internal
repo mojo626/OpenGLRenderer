@@ -1303,6 +1303,7 @@ CMakeFiles/game.dir/main.cpp.o
  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/vec4.hpp
  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/glm/glm/vector_relational.hpp
  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Camera.h
+ /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Cube.hpp
  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/Shaders.hpp
  /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/util/stb_image.h
 

@@ -1300,6 +1300,7 @@ CMakeFiles/game.dir/main.cpp.o: main.cpp \
   lib/glm/glm/vec4.hpp \
   lib/glm/glm/vector_relational.hpp \
   util/Camera.h \
+  util/Cube.hpp \
   util/Shaders.hpp \
   util/stb_image.h
 
@@ -1528,6 +1529,8 @@ CMakeFiles/game.dir/util/stb_image.cpp.o: util/stb_image.cpp \
 util/stb_image.h:
 
 util/Shaders.hpp:
+
+util/Cube.hpp:
 
 util/Camera.h:
 
