@@ -2,6 +2,7 @@
 in vec3 fPos;
 in vec3 worldPos;
 in vec3 cubePos;
+in vec3 normal;
 
 
 uniform sampler3D voxelShape;
@@ -69,6 +70,7 @@ vec4 march5(vec3 camPos)
   vec3 dis = (pos-((rayPos)*10+5) + 0.5 + rs*0.5) * ri;
   vec3 mm = vec3(0.0);
   vec4 col = vec4(0.0);
+  vec3 nor = vec3(0.0);
  
 
   for (int i = 0; i < 128; i++)
@@ -76,6 +78,12 @@ vec4 march5(vec3 camPos)
     
     if (texture(voxelShape, (pos)/10).a > 0 && !(pos.x == 10.0 || pos.y == 10.0 || pos.z == 10.0))
     {
+      if (i == 0)
+      {
+        nor = normal;
+      } else {
+        nor = -mm*rs;
+      }
       col = vec4(texture(voxelShape, (pos)/10).rgb, 1.0);
       break;
     }
@@ -91,7 +99,6 @@ vec4 march5(vec3 camPos)
     }
   }
 
-  vec3 nor = -mm*rs;
   float test = dot(nor, rd);
 
   return col * (test + 1)/2;
