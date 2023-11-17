@@ -11,16 +11,20 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
 #include <vector>
+#include "Gradient.hpp"
+#include "FastNoiseLite.h"
 
 class Cube {
 public:
   Shader shader;
   glm::vec3 pos;
+  bool isEmpty;
 
   Cube() {}
   Cube(glm::vec3 position, Shader thisShader) {
     shader = thisShader;
     pos = position;
+    isEmpty = true;
 
     
 
@@ -71,6 +75,9 @@ float vertices[] = {
 
 
     std::vector<uint8_t> voxels = GenerateTerrain(glm::vec3(10, 10, 10));
+
+    if (isEmpty)
+      return;
 
     // create vertex buffer
     glGenBuffers(1, &VBO);
@@ -170,6 +177,7 @@ private:
   std::vector<uint8_t> GenerateVoxels3D(glm::vec3 size) {
     std::vector<uint8_t> voxels(size.x * size.y * size.z * 4);
     Perlin p;
+    
 
     for (int x = 0; x < size.x; x++) {
       for (int z = 0; z < size.z; z++) {
@@ -195,23 +203,36 @@ private:
   std::vector<uint8_t> GenerateTerrain(glm::vec3 size) {
     std::vector<uint8_t> voxels(size.x * size.y * size.z * 4);
     Perlin p;
+    FastNoiseLite noise;
+    noise.SetNoiseType(FastNoiseLite::NoiseType_OpenSimplex2);
+    noise.SetFractalOctaves(5);
+
+    std::vector<GradientColor> colors;
+    colors.push_back(GradientColor(glm::vec3(0.0, 0.0, 1.0), 0.0));
+    colors.push_back(GradientColor(glm::vec3(0.0, 1.0, 0.0), 0.1));
+    Gradient gradient(colors);
 
     for (int x = 0; x < size.x; x++) {
       for (int z = 0; z < size.z; z++) {
-        float noise = p.noise((x + pos.x*size.x)/40.0, 0.0, (z + pos.z*size.z)/40.0) + 0.5;
+        //float noise = p.noise((x + pos.x*size.x)/40.0, 0.0, (z + pos.z*size.z)/40.0) + 0.5;
+        float noise_val = noise.GetNoise((x + pos.x*size.x), (z + pos.z*size.z))/2+0.5;
 
         for (int y = 0; y < size.y; y++) {
           int id = 4 * (z * size.x * size.y + y * size.x + x);
 
           //float noise = p.noise((x + pos.x*size.x)/40.0, (y + pos.y*size.y)/40.0, (z + pos.z*size.z)/40.0) + 0.5;
 
-          voxels[id] = (int)((x + pos.x*size.x)/200*255);
-          voxels[id + 1] = (int)((y + pos.y*size.y)/200*255); // Green channel
-          voxels[id + 2] = (int)((z + pos.z*size.z)/200*255); // Blue channel
-          voxels[id + 3] = static_cast<uint8_t>(noise*20 > y + pos.y * size.y ? 255 : 0); // Alpha channel (fully opaque)
+          glm::vec3 color = gradient.GetColor((y + pos.y * size.y)/200);
+
+          voxels[id] = (int)(color.x*255);
+          voxels[id + 1] = (int)(color.y*255); // Green channel
+          voxels[id + 2] = (int)(color.z*255); // Blue channel
+          voxels[id + 3] = static_cast<uint8_t>(noise_val*20 > y + pos.y * size.y ? 255 : 0); // Alpha channel (fully opaque)
+
+          if (noise_val*20 > y + pos.y * size.y)
+            isEmpty = false;
         }
       }
-     //std::cout << pos.x*size.x + x <<std::endl;
     }
 
     return voxels;

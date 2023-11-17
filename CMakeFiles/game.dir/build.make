@@ -125,12 +125,102 @@ CMakeFiles/game.dir/include/Perlin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/include/Perlin.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/include/Perlin.cpp -o CMakeFiles/game.dir/include/Perlin.cpp.s
 
+CMakeFiles/game.dir/lib/imgui/imgui.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/lib/imgui/imgui.cpp.o: lib/imgui/imgui.cpp
+CMakeFiles/game.dir/lib/imgui/imgui.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/lib/imgui/imgui.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/lib/imgui/imgui.cpp.o -MF CMakeFiles/game.dir/lib/imgui/imgui.cpp.o.d -o CMakeFiles/game.dir/lib/imgui/imgui.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui.cpp
+
+CMakeFiles/game.dir/lib/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/lib/imgui/imgui.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui.cpp > CMakeFiles/game.dir/lib/imgui/imgui.cpp.i
+
+CMakeFiles/game.dir/lib/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/lib/imgui/imgui.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui.cpp -o CMakeFiles/game.dir/lib/imgui/imgui.cpp.s
+
+CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o: lib/imgui/imgui_draw.cpp
+CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o -MF CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o.d -o CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_draw.cpp
+
+CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_draw.cpp > CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.i
+
+CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_draw.cpp -o CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.s
+
+CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o: lib/imgui/imgui_tables.cpp
+CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o -MF CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o.d -o CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_tables.cpp
+
+CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_tables.cpp > CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.i
+
+CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_tables.cpp -o CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.s
+
+CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o: lib/imgui/imgui_widgets.cpp
+CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o -MF CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_widgets.cpp
+
+CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_widgets.cpp > CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.i
+
+CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/imgui_widgets.cpp -o CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.s
+
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: lib/imgui/backends/imgui_impl_opengl3.cpp
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/backends/imgui_impl_opengl3.cpp
+
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
+
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
+
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o: lib/imgui/backends/imgui_impl_glfw.cpp
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/backends/imgui_impl_glfw.cpp
+
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i
+
+CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/lib/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s
+
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/main.cpp.o" \
 "CMakeFiles/game.dir/glad.c.o" \
 "CMakeFiles/game.dir/util/stb_image.cpp.o" \
-"CMakeFiles/game.dir/include/Perlin.cpp.o"
+"CMakeFiles/game.dir/include/Perlin.cpp.o" \
+"CMakeFiles/game.dir/lib/imgui/imgui.cpp.o" \
+"CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o" \
+"CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o" \
+"CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o" \
+"CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
@@ -139,10 +229,16 @@ game: CMakeFiles/game.dir/main.cpp.o
 game: CMakeFiles/game.dir/glad.c.o
 game: CMakeFiles/game.dir/util/stb_image.cpp.o
 game: CMakeFiles/game.dir/include/Perlin.cpp.o
+game: CMakeFiles/game.dir/lib/imgui/imgui.cpp.o
+game: CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o
+game: CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o
+game: CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o
+game: CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o
+game: CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: lib/glfw/src/libglfw3.a
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

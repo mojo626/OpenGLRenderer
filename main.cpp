@@ -13,6 +13,10 @@
 #include <iostream>
 #include <stdlib.h>
 #include <vector>
+#include "util/Chunk.hpp"
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
 
 bool wireframe = false;
 float deltaTime = 0.0f;
@@ -75,21 +79,28 @@ int main() {
 
   glEnable(GL_DEPTH_TEST);
 
+  // Setup Dear ImGui context
+  IMGUI_CHECKVERSION();
+  ImGui::CreateContext();
+  ImGuiIO& io = ImGui::GetIO();
+
+  ImGui::StyleColorsDark();
+
+  ImGui_ImplGlfw_InitForOpenGL(window, true);
+  ImGui_ImplOpenGL3_Init("#version 330");
+
   Shader shaderProgram("res/shaders/rayMarching.vert",
                        "res/shaders/rayMarching.frag");
 
-  int size = 20;
-  Cube cubes[size * size * size];
+  int size = 2;
+  Chunk chunks[size * size];
 
   for (int x = 0; x < size; x++) {
     for (int z = 0; z < size; z++) {
-      for (int y = 0; y < size; y++)
-      {
-        cubes[x + z * size * size + y * size] = Cube(glm::vec3(x, y, z), shaderProgram);
-      }
-      
+      chunks[x + z * size] = Chunk(glm::vec3(x, 0.0, z), shaderProgram);
     }
   }
+
 
 
   glViewport(0, 0, 800, 600);
@@ -105,26 +116,40 @@ int main() {
     processInput(window, &cam);
     // rendering
     //
-    // clear the screen with a green color
+     // clear the screen with a green color
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+
+    ImGui::Begin("Another Window");   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked
+    ImGui::Text("%.3fms  %.1ffps", deltaTime*1000, 1/deltaTime);
+    ImGui::End();
 
     glPolygonMode(GL_FRONT_AND_BACK, wireframe ? GL_LINE : GL_FILL);
 
     for (int x = 0; x < size; x++) {
       for (int z = 0; z < size; z++) {
-        for (int y = 0; y < size; y++)
-        {
-          cubes[x + z * size * size + y * size].Draw(&cam);
-        }
+        chunks[x + z * size].Draw(&cam);
       }
     }
+
+
+    ImGui::Render();
+    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
     // check events and swap buffers
     glfwSwapBuffers(window);
     glfwPollEvents();
   }
 
+  for (int x = 0; x < size; x++) {
+    for (int z = 0; z < size; z++) {
+      chunks[x + z * size].Terminate();
+    }
+  }
   glfwTerminate();
   return 0;
 }

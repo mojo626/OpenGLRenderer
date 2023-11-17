@@ -261,6 +261,150 @@ include/Perlin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/include/Perlin.cpp.s
 .PHONY : include/Perlin.cpp.s
 
+lib/imgui/backends/imgui_impl_glfw.o: lib/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_glfw.o
+
+# target to build an object file
+lib/imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.o
+
+lib/imgui/backends/imgui_impl_glfw.i: lib/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+lib/imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.i
+
+lib/imgui/backends/imgui_impl_glfw.s: lib/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+lib/imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.s
+
+lib/imgui/backends/imgui_impl_opengl3.o: lib/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.o
+
+# target to build an object file
+lib/imgui/backends/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.o
+
+lib/imgui/backends/imgui_impl_opengl3.i: lib/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+lib/imgui/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.i
+
+lib/imgui/backends/imgui_impl_opengl3.s: lib/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+lib/imgui/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.s
+
+lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
+.PHONY : lib/imgui/imgui.o
+
+# target to build an object file
+lib/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui.cpp.o
+.PHONY : lib/imgui/imgui.cpp.o
+
+lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
+.PHONY : lib/imgui/imgui.i
+
+# target to preprocess a source file
+lib/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui.cpp.i
+.PHONY : lib/imgui/imgui.cpp.i
+
+lib/imgui/imgui.s: lib/imgui/imgui.cpp.s
+.PHONY : lib/imgui/imgui.s
+
+# target to generate assembly for a file
+lib/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui.cpp.s
+.PHONY : lib/imgui/imgui.cpp.s
+
+lib/imgui/imgui_draw.o: lib/imgui/imgui_draw.cpp.o
+.PHONY : lib/imgui/imgui_draw.o
+
+# target to build an object file
+lib/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.o
+.PHONY : lib/imgui/imgui_draw.cpp.o
+
+lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
+.PHONY : lib/imgui/imgui_draw.i
+
+# target to preprocess a source file
+lib/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.i
+.PHONY : lib/imgui/imgui_draw.cpp.i
+
+lib/imgui/imgui_draw.s: lib/imgui/imgui_draw.cpp.s
+.PHONY : lib/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+lib/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_draw.cpp.s
+.PHONY : lib/imgui/imgui_draw.cpp.s
+
+lib/imgui/imgui_tables.o: lib/imgui/imgui_tables.cpp.o
+.PHONY : lib/imgui/imgui_tables.o
+
+# target to build an object file
+lib/imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.o
+.PHONY : lib/imgui/imgui_tables.cpp.o
+
+lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
+.PHONY : lib/imgui/imgui_tables.i
+
+# target to preprocess a source file
+lib/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.i
+.PHONY : lib/imgui/imgui_tables.cpp.i
+
+lib/imgui/imgui_tables.s: lib/imgui/imgui_tables.cpp.s
+.PHONY : lib/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+lib/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_tables.cpp.s
+.PHONY : lib/imgui/imgui_tables.cpp.s
+
+lib/imgui/imgui_widgets.o: lib/imgui/imgui_widgets.cpp.o
+.PHONY : lib/imgui/imgui_widgets.o
+
+# target to build an object file
+lib/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.o
+.PHONY : lib/imgui/imgui_widgets.cpp.o
+
+lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
+.PHONY : lib/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+lib/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.i
+.PHONY : lib/imgui/imgui_widgets.cpp.i
+
+lib/imgui/imgui_widgets.s: lib/imgui/imgui_widgets.cpp.s
+.PHONY : lib/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+lib/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/imgui/imgui_widgets.cpp.s
+.PHONY : lib/imgui/imgui_widgets.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -331,6 +475,24 @@ help:
 	@echo "... include/Perlin.o"
 	@echo "... include/Perlin.i"
 	@echo "... include/Perlin.s"
+	@echo "... lib/imgui/backends/imgui_impl_glfw.o"
+	@echo "... lib/imgui/backends/imgui_impl_glfw.i"
+	@echo "... lib/imgui/backends/imgui_impl_glfw.s"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.o"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.i"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.s"
+	@echo "... lib/imgui/imgui.o"
+	@echo "... lib/imgui/imgui.i"
+	@echo "... lib/imgui/imgui.s"
+	@echo "... lib/imgui/imgui_draw.o"
+	@echo "... lib/imgui/imgui_draw.i"
+	@echo "... lib/imgui/imgui_draw.s"
+	@echo "... lib/imgui/imgui_tables.o"
+	@echo "... lib/imgui/imgui_tables.i"
+	@echo "... lib/imgui/imgui_tables.s"
+	@echo "... lib/imgui/imgui_widgets.o"
+	@echo "... lib/imgui/imgui_widgets.i"
+	@echo "... lib/imgui/imgui_widgets.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

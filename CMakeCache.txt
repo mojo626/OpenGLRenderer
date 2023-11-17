@@ -319,6 +319,9 @@ OpenGLRenderer_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 OpenGLRenderer_SOURCE_DIR:STATIC=/Users/ben/Desktop/Coding/Cpp/OpenGLRenderer
 
+//The directory containing a CMake configuration file for imgui.
+imgui_DIR:PATH=imgui_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
