@@ -78,6 +78,9 @@ int main() {
   }
 
   glEnable(GL_DEPTH_TEST);
+  glEnable(GL_CULL_FACE);  
+  glCullFace(GL_BACK);
+  glFrontFace(GL_CW);  
 
   // Setup Dear ImGui context
   IMGUI_CHECKVERSION();
@@ -124,7 +127,7 @@ int main() {
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
 
-    ImGui::Begin("Another Window");   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked
+    ImGui::Begin("Stats");   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked
     ImGui::Text("%.3fms  %.1ffps", deltaTime*1000, 1/deltaTime);
     ImGui::End();
 

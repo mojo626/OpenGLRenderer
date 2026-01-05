@@ -41,12 +41,17 @@ class Gradient {
                         return colors.at(i).color;
                     }
 
-                    if (colors.at(i).pos - pos < pos - colors.at(i - 1).pos)
+                    if (pos > colors.at(i-1).pos)
                     {
-                        return colors.at(i).color;
-                    } else  {
-                        return colors.at(i - 1).color;
+                        if (colors.at(i).pos - pos < pos - colors.at(i - 1).pos)
+                        {
+                            return colors.at(i).color;
+                        } else  {
+                            return colors.at(i - 1).color;
+                        }
                     }
+
+                    
                 }
             }
 

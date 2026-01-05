@@ -1,5 +1,6 @@
 #version 330 core
 in vec3 fPos;
+in vec3 fDir;
 in vec3 worldPos;
 in vec3 cubePos;
 in vec3 normal;

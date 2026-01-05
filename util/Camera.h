@@ -17,6 +17,10 @@ public:
   glm::vec3 up;
   glm::vec3 right;
   glm::vec3 worldUp;
+  float nearPlane;
+  float farPlane;
+  float fovy;
+  float ratio;
   float speed;
   float yaw;
   float pitch;
@@ -30,6 +34,10 @@ public:
     yaw = -90.0f;
     pitch = 0.0f;
     mouseSensitivity = 0.1f;
+    nearPlane = 0.1f;
+    farPlane = 100.0f;
+    fovy = glm::radians(45.0f);
+    ratio = 800.0f / 600.0f;
   }
 
   void HandleInput(Camera_Movement direction, float deltaTime) {

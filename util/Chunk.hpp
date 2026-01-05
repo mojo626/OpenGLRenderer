@@ -21,13 +21,16 @@ class Chunk {
 
         size = 10;
 
-        cubes = std::vector<Cube>(size * size * size);
+        //cubes = std::vector<Cube>(size * size * size);
+        std::cout << pos.x << std::endl;
 
         for (int x = 0; x < size; x++) {
             for (int z = 0; z < size; z++) {
                 for (int y = 0; y < size; y++)
                 {
-                    cubes.at(x + z * size * size + y * size) = Cube(glm::vec3(x + size*pos.x, y + size*pos.y, z + size*pos.z), shaderProgram);
+                    Cube cube(glm::vec3(x + size*pos.x , y + size*pos.y , z + size*pos.z ), shaderProgram);
+                    if (!cube.isEmpty)
+                        cubes.push_back(cube);
                 }
             
             }
@@ -36,28 +39,17 @@ class Chunk {
 
     void Draw(Camera *cam)
     {
-        for (int x = 0; x < size; x++) {
-            for (int z = 0; z < size; z++) {
-                for (int y = 0; y < size; y++)
-                {
-                    if (!cubes.at(x + z * size * size + y * size).isEmpty)
-                        cubes.at(x + z * size * size + y * size).Draw(cam);
-                }
-            
-            }
+        for (int i = 0; i < cubes.size(); i++)
+        {
+            cubes.at(i).Draw(cam);
         }
     }
 
     void Terminate()
     {
-        for (int x = 0; x < size; x++) {
-            for (int z = 0; z < size; z++) {
-                for (int y = 0; y < size; y++)
-                {
-                    cubes.at(x + z * size * size + y * size).Terminate();
-                }
-            
-            }
+        for (int i = 0; i < cubes.size(); i++)
+        {
+            cubes.at(i).Terminate();
         }
     }
 };

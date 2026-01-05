@@ -8,10 +8,12 @@ uniform mat4 projection;
 uniform vec3 cubePosition;
 
 uniform vec3 camPos;
+uniform vec3 camDir;
 
 
 
 out vec3 fPos;
+out vec3 fDir;
 out vec3 cubePos;
 out vec3 worldPos;
 out vec3 normal;
@@ -23,5 +25,6 @@ void main()
     cubePos = cubePosition;
     worldPos = (vec4(aPos, 1.0) * model).xyz;
     normal = aNormal;
+    fDir = camDir;
 }
 

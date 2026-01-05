@@ -31,24 +31,28 @@ public:
 float vertices[] = {
     -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
      0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
-     0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
+     0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+
      0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
     -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
     -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
 
     -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
+     0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
      0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
+     
      0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-     0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-    -0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
     -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-
+    -0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
+    
     -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+    -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
     -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+    
     -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-    -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-    -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
     -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+    -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+    
 
      0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
      0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
@@ -58,11 +62,14 @@ float vertices[] = {
      0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
 
     -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+     0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
      0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+     
+
      0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-     0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-    -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
     -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+    -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+   
 
     -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
      0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
@@ -126,6 +133,13 @@ float vertices[] = {
   }
 
   void Draw(Camera *cam) {
+    //Don't render if the camera cannot see it
+    if (RadarFrustumCull(cam))
+    {
+      return;
+    }
+
+
     glEnable(GL_TEXTURE_3D);
     // bind texture
     // glBindTexture(GL_TEXTURE_2D, texture);
@@ -137,6 +151,7 @@ float vertices[] = {
 
     shader.use();
     shader.setVec3("camPos", cam->pos);
+    shader.setVec3("camDir", cam->front);
     shader.setVec3("cubePosition", pos);
 
     // preform matrix math
@@ -150,7 +165,7 @@ float vertices[] = {
     view = glm::lookAt(cam->pos, cam->pos + cam->front, cam->up);
     glm::mat4 projection = glm::mat4(1.0f);
     projection =
-        glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+        glm::perspective(cam->fovy, cam->ratio, cam->nearPlane, cam->farPlane);
 
     // send matricies to shader
     int modelLoc = glGetUniformLocation(shader.ID, "model");
@@ -160,10 +175,53 @@ float vertices[] = {
     int projLoc = glGetUniformLocation(shader.ID, "projection");
     glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
-    glBindVertexArray(VAO);
+    //glBindVertexArray(VAO);
     // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     glDrawArrays(GL_TRIANGLES, 0, 36);
   }
+  bool RadarFrustumCull(Camera *cam)
+    {
+      float size = 1.0f;
+      float error = 1.0f;
+        glm::vec3 points[] = {
+            glm::vec3(size + pos.x * size, 0.0f + pos.y * size, 0.0f + pos.z * size),
+            glm::vec3(size + pos.x * size, 0.0f + pos.y * size, size + pos.z * size),
+            glm::vec3(size + pos.x * size, size + pos.y * size, 0.0f + pos.z * size),
+            glm::vec3(size + pos.x * size, size + pos.y * size, size + pos.z * size),
+            glm::vec3(0.0f + pos.x * size, 0.0f + pos.y * size, size + pos.z * size),
+            glm::vec3(0.0f + pos.x * size, 0.0f + pos.y * size, 0.0f + pos.z * size),
+            glm::vec3(0.0f + pos.x * size, size + pos.y * size, 0.0f + pos.z * size),
+            glm::vec3(0.0f + pos.x * size, size + pos.y * size, size + pos.z * size)
+        };
+
+        for (int i = 0; i < 8; i++)
+        {
+            glm::vec3 p = points[i];
+
+            glm::vec3 v = p - cam->pos;
+            float pcZ = glm::dot(v, cam->front);
+
+            if (pcZ > cam->farPlane + error || pcZ < cam->nearPlane - error)
+                continue;
+
+            float pcX = glm::dot(v, cam->right);
+            float pcY = glm::dot(v, cam->up);
+            float h = pcZ * 2  * tan(cam->fovy/2);
+
+            if (-h/2 - error > pcY || h/2 + error  < pcY)
+                continue;
+            
+            float w = h * cam->ratio;
+
+            if (-w/2 - error  > pcX || w/2 + error  < pcX)
+                continue;
+            
+
+            return false;
+        }
+
+        return true;
+    }
 
   void Terminate() {
     glDeleteVertexArrays(1, &VAO);
@@ -177,6 +235,10 @@ private:
   std::vector<uint8_t> GenerateVoxels3D(glm::vec3 size) {
     std::vector<uint8_t> voxels(size.x * size.y * size.z * 4);
     Perlin p;
+
+    FastNoiseLite noise;
+    noise.SetNoiseType(FastNoiseLite::NoiseType_OpenSimplex2);
+    noise.SetFractalOctaves(5);
     
 
     for (int x = 0; x < size.x; x++) {
@@ -186,12 +248,13 @@ private:
         for (int y = 0; y < size.y; y++) {
           int id = 4 * (z * size.x * size.y + y * size.x + x);
 
-          float noise = p.noise((x + pos.x*size.x)/40.0, (y + pos.y*size.y)/40.0, (z + pos.z*size.z)/40.0) + 0.5;
+          float noise_val = noise.GetNoise((x + pos.x*size.x), (y + pos.y*size.y), (z + pos.z*size.z));
+          //std::cout << noise_val << std::endl;
 
           voxels[id] = (int)((x + pos.x*size.x)/200*255);
           voxels[id + 1] = (int)((y + pos.y*size.y)/200*255); // Green channel
           voxels[id + 2] = (int)((z + pos.z*size.z)/200*255); // Blue channel
-          voxels[id + 3] = static_cast<uint8_t>(noise > 0.5 ? 255 : 0); // Alpha channel (fully opaque)
+          voxels[id + 3] = static_cast<uint8_t>(noise_val > 0.0 ? 255 : 0); // Alpha channel (fully opaque)
         }
       }
      //std::cout << pos.x*size.x + x <<std::endl;
@@ -209,7 +272,10 @@ private:
 
     std::vector<GradientColor> colors;
     colors.push_back(GradientColor(glm::vec3(0.0, 0.0, 1.0), 0.0));
-    colors.push_back(GradientColor(glm::vec3(0.0, 1.0, 0.0), 0.1));
+    colors.push_back(GradientColor(glm::vec3(0.85, 0.58, 0.27), 0.1));
+    colors.push_back(GradientColor(glm::vec3(0.0, 1.0, 0.0), 0.2));
+    colors.push_back(GradientColor(glm::vec3(0.5, 0.5, 0.5), 0.8));
+    colors.push_back(GradientColor(glm::vec3(1.0, 1.0, 1.0), 0.9));
     Gradient gradient(colors);
 
     for (int x = 0; x < size.x; x++) {
@@ -222,14 +288,14 @@ private:
 
           //float noise = p.noise((x + pos.x*size.x)/40.0, (y + pos.y*size.y)/40.0, (z + pos.z*size.z)/40.0) + 0.5;
 
-          glm::vec3 color = gradient.GetColor((y + pos.y * size.y)/200);
+          glm::vec3 color = gradient.GetColor((y + pos.y * size.y)/100.0f);
 
           voxels[id] = (int)(color.x*255);
           voxels[id + 1] = (int)(color.y*255); // Green channel
           voxels[id + 2] = (int)(color.z*255); // Blue channel
-          voxels[id + 3] = static_cast<uint8_t>(noise_val*20 > y + pos.y * size.y ? 255 : 0); // Alpha channel (fully opaque)
+          voxels[id + 3] = static_cast<uint8_t>(noise_val*30 > y + pos.y * size.y ? 255 : 0); // Alpha channel (fully opaque)
 
-          if (noise_val*20 > y + pos.y * size.y)
+          if (noise_val*30 > y + pos.y * size.y)
             isEmpty = false;
         }
       }
